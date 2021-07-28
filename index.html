@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flimsit - Home</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="//fonts.googleapis.com/css?family=ABeeZee&subset=latin"
+            rel="stylesheet"
+            type="text/css"
+        />
+    </head>
+    <body>
+        <nav>
+            <div id="logo">
+                <img src="https://svgshare.com/i/Zd_.svg" alt="flimsit-logo" />
+            </div>
+            <div>
+                <div id="search-box">
+                    <input
+                        type="text"
+                        id="movie-name-input"
+                        placeholder="Search Movie Name"
+                    />
+                    <img
+                        onclick="getMoviesBySearch()"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/500px-Search_Icon.svg.png"
+                        alt="search-icon"
+                    />
+                </div>
+            </div>
+            <div style="margin-right: 1rem; color: #fff; cursor: pointer">
+                About US
+            </div>
+        </nav>
+        <div id="not-found"></div>
+        <section id="results"></section>
+        <section id="single-result" class="hide">
+            <div id="poster-div">
+                <img
+                    id="poster-img"
+                    src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg"
+                    alt="movie poster"
+                />
+            </div>
+            <div>
+                <h1 id="movie-title">Movie Name</h1>
+                <span id="recommended-tag" title="Recommended Movie">🏷️</span>
+                <p>Genre : <span id="genre">Action, Adventure, Comedy</span></p>
+                <p>Director : <span id="director">James Gunn</span></p>
+                <p>Language : <span id="language">English</span></p>
+                <p>
+                    Writer :
+                    <span id="writer"
+                        >James Gunn, Dan Abnett, Andy Lanning</span
+                    >
+                </p>
+                <p>Released On : <span id="released">05 May 2017</span></p>
+                <p>Runtime : <span id="runtime">136 min</span></p>
+                <p>imdbRating : <span id="imdbRating">7.6</span>/10</p>
+                <p>Country : <span id="country">United States</span></p>
+                <div id="back-btn" onclick="goBack()">⇐ Back</div>
+            </div>
+        </section>
+    </body>
+</html>
+<script src="script.js"></script>
