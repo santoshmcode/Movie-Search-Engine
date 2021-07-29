@@ -22,7 +22,10 @@ nav {
 }
 
 #logo > img {
-    width: 13rem;
+    margin-left: 1rem;
+    width: 4rem;
+    cursor: pointer;
+    
 }
 
 #not-found{
